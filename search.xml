@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>zsh的小窝搭载好啦  等过啦这段时间要好好粉刷一下小窝</title>
+    <url>/2020/11/28/zsh%E7%9A%84%E5%B0%8F%E7%AA%9D%E6%90%AD%E8%BD%BD%E5%A5%BD%E5%95%A6-%E7%AD%89%E8%BF%87%E5%95%A6%E8%BF%99%E6%AE%B5%E6%97%B6%E9%97%B4%E8%A6%81%E5%A5%BD%E5%A5%BD%E7%B2%89%E5%88%B7%E4%B8%80%E4%B8%8B%E5%B0%8F%E7%AA%9D/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/11/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,10 +22,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>zsh的小窝搭载好啦  等过啦这段时间要好好粉刷一下小窝</title>
-    <url>/2020/11/28/zsh%E7%9A%84%E5%B0%8F%E7%AA%9D%E6%90%AD%E8%BD%BD%E5%A5%BD%E5%95%A6-%E7%AD%89%E8%BF%87%E5%95%A6%E8%BF%99%E6%AE%B5%E6%97%B6%E9%97%B4%E8%A6%81%E5%A5%BD%E5%A5%BD%E7%B2%89%E5%88%B7%E4%B8%80%E4%B8%8B%E5%B0%8F%E7%AA%9D/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
