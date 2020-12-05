@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo在个人博客添加音乐</title>
-    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<br>
-<br>
-
-
-<p><strong>1.打开网页版网易云</strong></p>
-<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
-<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>博客相关</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2020/11/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -35,5 +17,23 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>hexo在个人博客添加音乐</title>
+    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<br>
+<br>
+
+
+<p><strong>1.打开网页版网易云</strong></p>
+<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
+<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>博客相关</tag>
+      </tags>
   </entry>
 </search>
