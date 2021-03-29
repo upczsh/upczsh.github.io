@@ -6,7 +6,7 @@
   <link href="http://upczsh/upczsh.github.io/atom.xml" rel="self"/>
   
   <link href="http://upczsh/upczsh.github.io/"/>
-  <updated>2020-12-05T12:07:42.637Z</updated>
+  <updated>2021-03-29T09:49:13.610Z</updated>
   <id>http://upczsh/upczsh.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc无重复字符的最长子串</title>
+    <link href="http://upczsh/upczsh.github.io/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/"/>
+    <id>http://upczsh/upczsh.github.io/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</id>
+    <published>2021-03-29T09:39:42.000Z</published>
+    <updated>2021-03-29T09:49:13.610Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://upczsh/upczsh.github.io/categories/leetcode/"/>
+    
+    
+    <category term="lc" scheme="http://upczsh/upczsh.github.io/tags/lc/"/>
+    
+    <category term="滑动窗口" scheme="http://upczsh/upczsh.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo在个人博客添加音乐</title>
