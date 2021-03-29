@@ -6,7 +6,7 @@
   <link href="http://upczsh/upczsh.github.io/atom.xml" rel="self"/>
   
   <link href="http://upczsh/upczsh.github.io/"/>
-  <updated>2021-03-29T09:49:13.610Z</updated>
+  <updated>2021-03-29T10:01:06.944Z</updated>
   <id>http://upczsh/upczsh.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>lc翻转链表</title>
+    <link href="http://upczsh/upczsh.github.io/2021/03/29/lc%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8/"/>
+    <id>http://upczsh/upczsh.github.io/2021/03/29/lc%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8/</id>
+    <published>2021-03-29T09:54:38.000Z</published>
+    <updated>2021-03-29T10:01:06.944Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;非递归写法&quot;&gt;&lt;a href=&quot;#非递归写法&quot; class=&quot;headerlink&quot; title=&quot;非递归写法&quot;&gt;&lt;/a&gt;非递归写法&lt;/h4&gt;&lt;h5 id=&quot;一个是当前指针，一个是前一个指针，通过不断转换进行翻转。&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="leetcode" scheme="http://upczsh/upczsh.github.io/categories/leetcode/"/>
+    
+    
+    <category term="lc" scheme="http://upczsh/upczsh.github.io/tags/lc/"/>
+    
+    <category term="链表" scheme="http://upczsh/upczsh.github.io/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>lc无重复字符的最长子串</title>
