@@ -19,42 +19,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo在个人博客添加音乐</title>
-    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<br>
-<br>
-
-
-<p><strong>1.打开网页版网易云</strong></p>
-<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
-<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
-]]></content>
-      <categories>
-        <category>博客相关</category>
-      </categories>
-      <tags>
-        <tag>博客相关</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>lc无重复字符的最长子串</title>
-    <url>/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</url>
-    <content><![CDATA[<br>
-
-<ul>
-<li>滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">                Set&lt;Character&gt; hash = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">                <span class="keyword">int</span> ans = <span class="number">0</span> ;   <span class="comment">// 存储最终的答案</span></span><br><span class="line">                <span class="keyword">int</span> right = -<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> len = s.length();</span><br><span class="line">                <span class="comment">// i代表左指针   right 代表右指针  答案就是right - i +1 </span></span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; len ; i++)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span>(i!=<span class="number">0</span>)</span><br><span class="line">                    &#123;</span><br><span class="line">                        hash.remove(s.charAt(i-<span class="number">1</span>)); <span class="comment">//移除上一个</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">while</span>(right+<span class="number">1</span>&lt;len&amp;&amp;!hash.contains(s.charAt(right+<span class="number">1</span>)))   <span class="comment">//右指针 没有超过最大界限 并且 集合当中没有重复元素 那么 就 一直右移 并在集合中添加此元素</span></span><br><span class="line">                    &#123;</span><br><span class="line">                            hash.add(s.charAt(right+<span class="number">1</span>));</span><br><span class="line">                            right ++;      </span><br><span class="line">                    &#125;</span><br><span class="line">                     ans = Math.max(ans, right+<span class="number">1</span>-i);        <span class="comment">//存储最终的答案</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ans; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>lc</tag>
-        <tag>滑动窗口</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>lc翻转链表</title>
     <url>/2021/03/29/lc%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8/</url>
     <content><![CDATA[<ul>
@@ -75,6 +39,24 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo在个人博客添加音乐</title>
+    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<br>
+<br>
+
+
+<p><strong>1.打开网页版网易云</strong></p>
+<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
+<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>博客相关</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>二叉树的三种遍历(递归，迭代)</title>
     <url>/2021/04/01/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%89%E7%A7%8D%E9%81%8D%E5%8E%86-%E9%80%92%E5%BD%92%EF%BC%8C%E8%BF%AD%E4%BB%A3/</url>
     <content><![CDATA[]]></content>
@@ -84,6 +66,24 @@
       <tags>
         <tag>二叉树</tag>
         <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>lc无重复字符的最长子串</title>
+    <url>/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</url>
+    <content><![CDATA[<br>
+
+<ul>
+<li>滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">   <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">                Set&lt;Character&gt; hash = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">                <span class="keyword">int</span> ans = <span class="number">0</span> ;   <span class="comment">// 存储最终的答案</span></span><br><span class="line">                <span class="keyword">int</span> right = -<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> len = s.length();</span><br><span class="line">                <span class="comment">// i代表左指针   right 代表右指针  答案就是right - i +1 </span></span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; len ; i++)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span>(i!=<span class="number">0</span>)</span><br><span class="line">                    &#123;</span><br><span class="line">                        hash.remove(s.charAt(i-<span class="number">1</span>)); <span class="comment">//移除上一个</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">while</span>(right+<span class="number">1</span>&lt;len&amp;&amp;!hash.contains(s.charAt(right+<span class="number">1</span>)))   <span class="comment">//右指针 没有超过最大界限 并且 集合当中没有重复元素 那么 就 一直右移 并在集合中添加此元素</span></span><br><span class="line">                    &#123;</span><br><span class="line">                            hash.add(s.charAt(right+<span class="number">1</span>));</span><br><span class="line">                            right ++;      </span><br><span class="line">                    &#125;</span><br><span class="line">                     ans = Math.max(ans, right+<span class="number">1</span>-i);        <span class="comment">//存储最终的答案</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> ans; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>lc</tag>
+        <tag>滑动窗口</tag>
       </tags>
   </entry>
 </search>
