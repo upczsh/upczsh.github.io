@@ -80,7 +80,7 @@
 &lt;ul&gt;
 &lt;li&gt;滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code</summary>
         
       
     
