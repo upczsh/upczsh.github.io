@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo在个人博客添加音乐</title>
+    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<br>
+<br>
+
+
+<p><strong>1.打开网页版网易云</strong></p>
+<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
+<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
+]]></content>
+      <categories>
+        <category>博客相关</category>
+      </categories>
+      <tags>
+        <tag>博客相关</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/11/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,21 +37,46 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo在个人博客添加音乐</title>
-    <url>/2020/12/05/hexo%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+    <title>lc无重复字符的最长子串</title>
+    <url>/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</url>
     <content><![CDATA[<br>
-<br>
 
+<ul>
+<li>滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">
+   <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">lengthOfLongestSubstring</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+                <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Character</span><span class="token punctuation">></span></span> hash <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span>   <span class="token comment">// 存储最终的答案</span>
+                <span class="token keyword">int</span> right <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token keyword">int</span> len <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// i代表左指针   right 代表右指针  答案就是right - i +1 </span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+                <span class="token punctuation">&#123;</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">&#123;</span>
+                        hash<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//移除上一个</span>
+                    <span class="token punctuation">&#125;</span>
+                    <span class="token keyword">while</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span>len<span class="token operator">&amp;&amp;</span><span class="token operator">!</span>hash<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">//右指针 没有超过最大界限 并且 集合当中没有重复元素 那么 就 一直右移 并在集合中添加此元素</span>
+                    <span class="token punctuation">&#123;</span>
+                            hash<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            right <span class="token operator">++</span><span class="token punctuation">;</span>      
+                    <span class="token punctuation">&#125;</span>
+                     ans <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> right<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">//存储最终的答案</span>
+                <span class="token punctuation">&#125;</span>
+                <span class="token keyword">return</span> ans<span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-<p><strong>1.打开网页版网易云</strong></p>
-<p><strong>2.点击自己想加入的音乐</strong><br><img src="http://i1.fuimg.com/730548/59a9131b34ccce87.png"><br><strong>点击生成外链播放器</strong></p>
-<p><img src="http://i1.fuimg.com/730548/9846a04b1469d1c4.png"><br><strong>复制这些代码 粘贴到自己本地主题sidebar.swig文件中</strong><br><strong>例如我的地址就如下图片所示</strong><br><img src="http://i2.tiimg.com/730548/fa091c6234305627.png"></p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 ]]></content>
       <categories>
-        <category>博客相关</category>
+        <category>leetcode</category>
       </categories>
       <tags>
-        <tag>博客相关</tag>
+        <tag>lc</tag>
+        <tag>滑动窗口</tag>
       </tags>
   </entry>
   <entry>
@@ -80,49 +123,6 @@
       <tags>
         <tag>lc</tag>
         <tag>链表</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>lc无重复字符的最长子串</title>
-    <url>/2021/03/29/lc%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</url>
-    <content><![CDATA[<br>
-
-<ul>
-<li>滑动窗口，用一个Set来存储元素 利用滑动窗口特性来计算出最终的答案</li>
-</ul>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">
-   <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">lengthOfLongestSubstring</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-                <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Character</span><span class="token punctuation">></span></span> hash <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span>   <span class="token comment">// 存储最终的答案</span>
-                <span class="token keyword">int</span> right <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> len <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token comment">// i代表左指针   right 代表右指针  答案就是right - i +1 </span>
-                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-                <span class="token punctuation">&#123;</span>
-                    <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span>
-                    <span class="token punctuation">&#123;</span>
-                        hash<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//移除上一个</span>
-                    <span class="token punctuation">&#125;</span>
-                    <span class="token keyword">while</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token operator">&lt;</span>len<span class="token operator">&amp;&amp;</span><span class="token operator">!</span>hash<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">//右指针 没有超过最大界限 并且 集合当中没有重复元素 那么 就 一直右移 并在集合中添加此元素</span>
-                    <span class="token punctuation">&#123;</span>
-                            hash<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>right<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            right <span class="token operator">++</span><span class="token punctuation">;</span>      
-                    <span class="token punctuation">&#125;</span>
-                     ans <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> right<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment">//存储最终的答案</span>
-                <span class="token punctuation">&#125;</span>
-                <span class="token keyword">return</span> ans<span class="token punctuation">;</span> 
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>lc</tag>
-        <tag>滑动窗口</tag>
       </tags>
   </entry>
   <entry>
